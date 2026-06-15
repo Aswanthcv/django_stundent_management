@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:none;
+    border-radius:20px;
+    color:white;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+.btn-custom{
+    background:#38bdf8;
+    color:white;
+    border:none;
+}
+
+.btn-custom:hover{
+    background:#0ea5e9;
+}
+
+.student-table{
+    background:white;
+    color:black;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.section-title{
+    margin-bottom:20px;
+    font-weight:bold;
+}
