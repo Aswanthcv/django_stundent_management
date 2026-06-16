@@ -34,4 +34,16 @@ def delete_student(request, id):
     return redirect('home')
 
 def update_student(request, id):
-   return render(request,'update.html')
+   student = Students.objects.get(id=id)
+   if request.method == 'POST':
+      student.name = request.POST.get('name')
+      student.email = request.POST.get('email')
+      student.course = request.POST.get('course')
+      
+      student.save()
+      return redirect('home')
+   
+   context = {
+      'student' : student
+   }
+   return render(request,'update.html',context)
