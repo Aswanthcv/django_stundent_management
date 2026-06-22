@@ -21,7 +21,7 @@ def home(request):
 
   context = {
     'students':students,
-    # 'status_choice':Students.STATUS_CHOICES
+    'status_choice':STATUS_CHOICES
   }
 
   return render(request,'home.html',context)
